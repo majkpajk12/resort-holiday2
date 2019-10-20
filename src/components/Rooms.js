@@ -1,8 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import defaultImg from "../images/room-1.jpeg";
-import PropTypes from "prop-types";
-import { memo } from "react";
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import defaultImg from "../images/room-1.jpeg";
+// // import PropTypes from "prop-types";
+// // import { memo } from "react";
+// import RoomContainer from "./RoomContainer";
+
+// const Rooms = () => {
+//   return (
+//     <>
+//       <Hero hero="roomsHero">
+//         <Banner title="our rooms">
+//           <Link to="/" className="btn-primary">
+//             return home
+//           </Link>
+//         </Banner>
+//       </Hero>
+//       <RoomContainer />
+//     </>
+//   );
+// };
+
+// // 3:46 min application breaking.  min kod ovan
+
+// export default Room;
+
+import RoomContainer from "./RoomContainer";
+
 const Room = memo(({ room }) => {
   const { name, slug, images, price } = room;
   // console.log(name);
